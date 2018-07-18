@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="me.licenta.mydocuments">
+    
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
-    <application
+    <application tools:ignore="ExtraText">
         android:allowBackup="true"
         android:icon="@mipmap/documents_render"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/documents_render_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".RegisterActivity"></activity>
         <activity android:name=".MainActivity"></activity>
     </application>
 

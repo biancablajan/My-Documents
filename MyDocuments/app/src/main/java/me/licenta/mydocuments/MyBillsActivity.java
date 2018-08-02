@@ -18,6 +18,7 @@ public class MyBillsActivity extends Activity {
         iwBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finish();
                 Intent iwBack = new Intent(MyBillsActivity.this,MainActivity.class);
                 MyBillsActivity.this.startActivity(iwBack);
             }
@@ -28,9 +29,31 @@ public class MyBillsActivity extends Activity {
         buttonUploadABill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //create class and layout PLS
+                Intent buttonUploadABill = new Intent(MyBillsActivity.this, UploadABillActivity.class);
+                MyBillsActivity.this.startActivity(buttonUploadABill);
+            }
+        });
+
+        //declare VIEW MY BILLS Button and create a Listener to redirect to View My Bills page when clicking on it
+        final Button buttonViewMyBills = (Button) findViewById(R.id.buttonViewMyBills);
+        buttonViewMyBills.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent buttonViewMyBills = new Intent(MyBillsActivity.this, ViewMyBillsActivity.class);
+                MyBillsActivity.this.startActivity(buttonViewMyBills);
+            }
+        });
+
+        //declare SHOW ME STATISTICS Button and create a Listener to redirect to Show Me Statistics page when clicking on it
+        final Button buttonShowMeStatistics = (Button) findViewById(R.id.buttonShowMeStatistics);
+        buttonShowMeStatistics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent buttonShowMeStatistics = new Intent(MyBillsActivity.this, ShowMeStatisticsActivity.class);
+                MyBillsActivity.this.startActivity(buttonShowMeStatistics);
             }
         });
 
     }
 }
+

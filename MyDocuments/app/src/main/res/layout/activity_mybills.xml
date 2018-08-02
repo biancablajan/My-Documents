@@ -57,4 +57,74 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iwBack" />
 
+    <Button
+        android:id="@+id/buttonViewMyBills"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="306dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="53dp"
+        android:text="View My Bills"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUploadABill" />
+
+    <ImageView
+        android:id="@+id/viewLogo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="311dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="56dp"
+        android:src="@mipmap/view"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonViewMyBills"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadLogo" />
+
+    <Button
+        android:id="@+id/buttonShowMeStatistics"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="190dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="56dp"
+        android:text="Show Me Statistics"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonViewMyBills" />
+
+    <ImageView
+        android:id="@+id/statisticsLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="190dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="71dp"
+        android:src="@mipmap/statistics"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonShowMeStatistics"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewLogo"
+        app:layout_constraintVertical_bias="0.0" />
+
 </android.support.constraint.ConstraintLayout>

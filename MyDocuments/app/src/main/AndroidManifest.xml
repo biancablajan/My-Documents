@@ -24,6 +24,10 @@
         <activity android:name=".MyBillsActivity"/>
         <activity android:name=".MyCertificatesActivity"/>
         <activity android:name=".MyWalletActivity"/>
+        <activity android:name=".UploadABillActivity"/>
+        <activity android:name=".ViewMyBillsActivity"/>
+        <activity android:name=".ShowMeStatisticsActivity"/>
+
     </application>
 
 </manifest>

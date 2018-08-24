@@ -10,7 +10,7 @@
     <EditText
         android:id="@+id/etEmail"
         style="@android:style/Widget.Holo.Light.EditText"
-        android:layout_width="299dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="56dp"
         android:layout_marginLeft="56dp"
@@ -32,7 +32,7 @@
     <EditText
         android:id="@+id/etPassword"
         style="@android:style/Widget.Holo.Light.EditText"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="56dp"
         android:layout_marginLeft="56dp"
@@ -53,8 +53,8 @@
     <Button
         android:id="@+id/buttonLogin"
         style="@android:style/Widget.DeviceDefault.Button"
-        android:layout_width="167dp"
-        android:layout_height="51dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
         android:layout_marginEnd="122dp"
         android:layout_marginLeft="122dp"
@@ -71,7 +71,7 @@
     <TextView
         android:id="@+id/tvRegisterNow"
         android:layout_width="wrap_content"
-        android:layout_height="23dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"

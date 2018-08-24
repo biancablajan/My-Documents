@@ -9,10 +9,10 @@
 
     <Button
         android:id="@+id/buttonGallery"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
         android:layout_marginTop="100dp"
         android:text="Gallery"
         android:typeface="normal"
@@ -21,11 +21,11 @@
 
     <ImageView
         android:id="@+id/galleryLogo"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="53dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="108dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="88dp"
         android:background="@mipmap/view"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,11 +34,11 @@
 
     <Button
         android:id="@+id/buttonUpload"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
-        android:layout_marginTop="256dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:layout_marginTop="264dp"
         android:text="Upload"
         android:typeface="normal"
         android:visibility="visible"
@@ -47,11 +47,11 @@
 
     <ImageView
         android:id="@+id/uploadLogo"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="53dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginTop="169dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="108dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="176dp"
         android:background="@mipmap/upload"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,8 +60,8 @@
 
     <ImageView
         android:id="@+id/iwBack"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="596dp"
         android:layout_marginEnd="321dp"
         android:layout_marginLeft="40dp"

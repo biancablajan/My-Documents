@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/myidentitycard_background"
+    tools:context=".MyIdentityCardActivity">
+
+    <Button
+        android:id="@+id/buttonGallery"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="100dp"
+        android:text="Gallery"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUpload" />
+
+    <ImageView
+        android:id="@+id/galleryLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="100dp"
+        android:background="@mipmap/view"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadLogo"
+        app:srcCompat="@mipmap/view" />
+
+    <Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="256dp"
+        android:text="Upload"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/uploadLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="169dp"
+        android:background="@mipmap/upload"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iwBack"
+        app:srcCompat="@mipmap/upload" />
+
+    <ImageView
+        android:id="@+id/iwBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="596dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="321dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="37dp"
+        android:src="@mipmap/back_arrow"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+</android.support.constraint.ConstraintLayout>

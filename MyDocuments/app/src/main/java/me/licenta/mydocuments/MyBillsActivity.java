@@ -3,6 +3,7 @@ package me.licenta.mydocuments;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -18,9 +19,13 @@ public class MyBillsActivity extends Activity {
         iwBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
-                Intent iwBack = new Intent(MyBillsActivity.this,MainActivity.class);
-                MyBillsActivity.this.startActivity(iwBack);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        clickOnBack();
+                        finish();
+                    }
+                },1000);
             }
         });
 
@@ -29,8 +34,13 @@ public class MyBillsActivity extends Activity {
         buttonUploadABill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent buttonUploadABill = new Intent(MyBillsActivity.this, UploadABillActivity.class);
-                MyBillsActivity.this.startActivity(buttonUploadABill);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        clickOnUploadABill();
+                        finish();
+                    }
+                },1000);
             }
         });
 
@@ -39,8 +49,13 @@ public class MyBillsActivity extends Activity {
         buttonViewMyBills.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent buttonViewMyBills = new Intent(MyBillsActivity.this, ViewMyBillsActivity.class);
-                MyBillsActivity.this.startActivity(buttonViewMyBills);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        clickOnViewMyBills();
+                        finish();
+                    }
+                },1000);
             }
         });
 
@@ -49,11 +64,36 @@ public class MyBillsActivity extends Activity {
         buttonShowMeStatistics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent buttonShowMeStatistics = new Intent(MyBillsActivity.this, ShowMeStatisticsActivity.class);
-                MyBillsActivity.this.startActivity(buttonShowMeStatistics);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        clickOnShowMeStatistics();
+                        finish();
+                    }
+                },1000);
             }
         });
 
+    }
+    //==============================================================================================
+    public void clickOnBack() {
+        Intent iwBack = new Intent(MyBillsActivity.this, MainActivity.class);
+        MyBillsActivity.this.startActivity(iwBack);
+    }
+
+    public void clickOnUploadABill(){
+        Intent buttonUploadABill = new Intent(MyBillsActivity.this, UploadABillActivity.class);
+        MyBillsActivity.this.startActivity(buttonUploadABill);
+    }
+
+    public void clickOnViewMyBills(){
+        Intent buttonViewMyBills = new Intent(MyBillsActivity.this, ViewMyBillsActivity.class);
+        MyBillsActivity.this.startActivity(buttonViewMyBills);
+    }
+
+    public void clickOnShowMeStatistics(){
+        Intent buttonShowMeStatistics = new Intent(MyBillsActivity.this, ShowMeStatisticsActivity.class);
+        MyBillsActivity.this.startActivity(buttonShowMeStatistics);
     }
 }
 

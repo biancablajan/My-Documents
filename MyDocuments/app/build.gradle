@@ -31,4 +31,5 @@ dependencies {
     implementation 'com.mcxiaoke.volley:library:1.0.19'
     implementation 'com.android.support:support-v13:27.1.1'
     implementation project(':scanlibrary')
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
 }

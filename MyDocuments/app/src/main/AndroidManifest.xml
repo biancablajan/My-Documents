@@ -61,6 +61,7 @@
         <activity android:name="me.licenta.mydocuments.MyHealthCardActivity" />
         <activity android:name="me.licenta.mydocuments.View_DocumentsFromMyCar" />
         <activity android:name="me.licenta.mydocuments.DisplayClickedImage" />
+        <activity android:name=".Pinch_DisplayedImage"/>
         <activity android:name="me.licenta.mydocuments.View_MyDiplomas" />
         <activity android:name="me.licenta.mydocuments.View_MyWarranties" />
         <activity android:name="me.licenta.mydocuments.View_MyContracts" />
@@ -76,6 +77,7 @@
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name" >
         </activity>
+
 
         <provider
             android:name="android.support.v4.content.FileProvider"

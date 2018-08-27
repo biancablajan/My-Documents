@@ -25,16 +25,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonUploadABill"
+        android:id="@+id/buttonScanWholeBill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="264dp"
-        android:text="Upload A Bill"
+        android:layout_marginTop="56dp"
+        android:text="Scan Whole Bill"
+        android:typeface="normal"
         android:visibility="visible"
         app:layout_constraintStart_toEndOf="@+id/uploadLogo"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonOCRMyBill" />
 
     <ImageView
         android:id="@+id/uploadLogo"
@@ -56,9 +57,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="56dp"
         android:text="View My Bills"
+        android:typeface="normal"
         android:visibility="visible"
         app:layout_constraintStart_toEndOf="@+id/viewLogo"
-        app:layout_constraintTop_toBottomOf="@+id/buttonUploadABill" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonScanWholeBill" />
 
     <ImageView
         android:id="@+id/viewLogo"
@@ -73,13 +75,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonShowMeStatistics"
+        android:id="@+id/buttonShowMeMyLastBills"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="56dp"
-        android:text="Show Me Statistics"
+        android:text="Show Me My Last Bills"
+        android:typeface="normal"
         android:visibility="visible"
         app:layout_constraintStart_toEndOf="@+id/statisticsLogo"
         app:layout_constraintTop_toBottomOf="@+id/buttonViewMyBills" />
@@ -95,5 +98,29 @@
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewLogo" />
+
+    <Button
+        android:id="@+id/buttonOCRMyBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
+        android:text="OCR My Bill"
+        android:typeface="normal"
+        app:layout_constraintStart_toEndOf="@+id/ocrLogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ocrLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="61dp"
+        android:src="@mipmap/ocrmybillslogo"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iwBack" />
 
 </android.support.constraint.ConstraintLayout>

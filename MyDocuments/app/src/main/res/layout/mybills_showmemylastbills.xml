@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper_background"
+    tools:context=".MyBills_ShowMeMyLastBills">
+
+    <ImageView
+        android:id="@+id/iwBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="596dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="321dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/back_arrow"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/orangeLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/orangelogo"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iwBack" />
+
+    <ImageView
+        android:id="@+id/vodafoneLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/vodafonelogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orangeLogo" />
+
+    <ImageView
+        android:id="@+id/telekomLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/telekomlogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vodafoneLogo" />
+
+    <ImageView
+        android:id="@+id/digiLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/digilogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telekomLogo" />
+
+    <ImageView
+        android:id="@+id/upcLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/upclogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/digiLogo" />
+
+    <ImageView
+        android:id="@+id/electricaLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/electricalogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upcLogo" />
+
+    <ImageView
+        android:id="@+id/engieLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/engielogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/electricaLogo" />
+
+    <ImageView
+        android:id="@+id/enelLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/enellogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/engieLogo" />
+
+    <ImageView
+        android:id="@+id/eonLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/eonlogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enelLogo" />
+
+    <TextView
+        android:id="@+id/dueDateOrange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="132dp"
+        android:text="Due Date"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/orangeLogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TotalPaymentOrange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="132dp"
+        android:text="Total Payment"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/dueDateOrange"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DueDateVodafone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="50dp"
+        android:text="Due Date"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/vodafoneLogo"
+        app:layout_constraintTop_toBottomOf="@+id/dueDateOrange" />
+
+    <TextView
+        android:id="@+id/TotalPaymentVodafone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="50dp"
+        android:text="Total Payment"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/DueDateVodafone"
+        app:layout_constraintTop_toBottomOf="@+id/TotalPaymentOrange" />
+
+    <TextView
+        android:id="@+id/DueDateTelekom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="40dp"
+        android:text="Due Date"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/telekomLogo"
+        app:layout_constraintTop_toBottomOf="@+id/DueDateVodafone" />
+
+    <TextView
+        android:id="@+id/TotalPaymentTelekom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="40dp"
+        android:text="Total Payment"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/DueDateTelekom"
+        app:layout_constraintTop_toBottomOf="@+id/TotalPaymentVodafone" />
+
+    <TextView
+        android:id="@+id/DueDateDigi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="45dp"
+        android:text="Due Date"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/digiLogo"
+        app:layout_constraintTop_toBottomOf="@+id/DueDateTelekom" />
+
+    <TextView
+        android:id="@+id/TotalPaymentDigi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="45dp"
+        android:text="Total Payment"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/DueDateDigi"
+        app:layout_constraintTop_toBottomOf="@+id/TotalPaymentTelekom" />
+
+    <TextView
+        android:id="@+id/DueDateUPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="60dp"
+        android:text="Due Date"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/upcLogo"
+        app:layout_constraintTop_toBottomOf="@+id/DueDateDigi" />
+
+    <TextView
+        android:id="@+id/TotalPaymentUPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="60dp"
+        android:text="Total Payment"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/DueDateUPC"
+        app:layout_constraintTop_toBottomOf="@+id/TotalPaymentDigi" />
+
+    <TextView
+        android:id="@+id/DueDateElectrica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="45dp"
+        android:text="Due Date"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/electricaLogo"
+        app:layout_constraintTop_toBottomOf="@+id/DueDateUPC" />
+
+    <TextView
+        android:id="@+id/TotalPaymentElectrica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="45dp"
+        android:text="Total Payment"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/DueDateElectrica"
+        app:layout_constraintTop_toBottomOf="@+id/TotalPaymentUPC" />
+
+    <TextView
+        android:id="@+id/DueDateEngie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="37dp"
+        android:text="Due Date"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/engieLogo"
+        app:layout_constraintTop_toBottomOf="@+id/DueDateElectrica" />
+
+    <TextView
+        android:id="@+id/TotalPaymentEngie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="37dp"
+        android:text="Total Payment"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/DueDateEngie"
+        app:layout_constraintTop_toBottomOf="@+id/TotalPaymentElectrica" />
+
+    <TextView
+        android:id="@+id/DueDateEnel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="29dp"
+        android:text="Due Date"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/enelLogo"
+        app:layout_constraintTop_toBottomOf="@+id/DueDateEngie" />
+
+    <TextView
+        android:id="@+id/TotalPaymentEnel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="29dp"
+        android:text="Total Payment"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/DueDateEnel"
+        app:layout_constraintTop_toBottomOf="@+id/TotalPaymentEngie" />
+
+    <TextView
+        android:id="@+id/DueDateEon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="28dp"
+        android:text="Due Date"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eonLogo"
+        app:layout_constraintTop_toBottomOf="@+id/DueDateEnel" />
+
+    <TextView
+        android:id="@+id/TotalPaymentEon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="28dp"
+        android:text="Total Payment"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/DueDateEon"
+        app:layout_constraintTop_toBottomOf="@+id/TotalPaymentEnel" />
+
+</android.support.constraint.ConstraintLayout>

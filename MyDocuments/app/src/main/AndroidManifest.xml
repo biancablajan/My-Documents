@@ -43,11 +43,13 @@
         <activity android:name="me.licenta.mydocuments.RegisterActivity" />
         <activity android:name="me.licenta.mydocuments.MainActivity" />
         <activity android:name="me.licenta.mydocuments.MyBillsActivity" />
+        <activity android:name=".MyBills_OCRMyBills"/>
+        <activity android:name=".MyBills_ScanWholeBill"/>
+        <activity android:name=".MyBills_ViewMyBills"/>
+        <activity android:name=".MyBills_ShowMeMyLastBills"/>
+        <activity android:name=".MyBills_OCRMyBillInstructions"/>
         <activity android:name="me.licenta.mydocuments.MyCertificatesActivity" />
         <activity android:name="me.licenta.mydocuments.MyWalletActivity" />
-        <activity android:name="me.licenta.mydocuments.UploadABillActivity" />
-        <activity android:name="me.licenta.mydocuments.ViewMyBillsActivity" />
-        <activity android:name="me.licenta.mydocuments.ShowMeStatisticsActivity" />
         <activity android:name="me.licenta.mydocuments.DocumentsFromMyCarActivity" />
         <activity android:name="me.licenta.mydocuments.MyDiplomasActivity" />
         <activity android:name="me.licenta.mydocuments.MyWarrantiesActivity" />
@@ -88,6 +90,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths" />
         </provider>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="ocr"/>
     </application>
 
 </manifest>

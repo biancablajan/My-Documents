@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper_background"
+    tools:context=".MyBills_OCRMyBillInstructions">
+
+
+    <ImageView
+        android:id="@+id/iwBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="596dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="321dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="37dp"
+        android:src="@mipmap/back_arrow"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:id="@+id/instructionsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="153dp"
+        android:text="Instructions for OCR:"
+        android:textColor="?android:attr/colorBackground"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instruction1text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:text='1. Press the "Service Name" button once you hold the phone above the service name contained on the bill;'
+        android:textColor="?android:attr/colorBackground"
+        android:textSize="12sp"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionsText" />
+
+    <TextView
+        android:id="@+id/instruction2text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:text='2. Press the "Due date" button once you hold the phone above the due date contained on the bill;'
+        android:textColor="?android:attr/colorBackground"
+        android:textSize="12sp"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruction1text" />
+
+    <TextView
+        android:id="@+id/instruction3text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:text='3. Press the "Total Payment" button once you hold the phone above the total payment contained on the bill.'
+        android:textColor="?android:attr/colorBackground"
+        android:textSize="12sp"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruction2text" />
+
+    <Button
+        android:id="@+id/buttonProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Proceed"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruction3text" />
+</android.support.constraint.ConstraintLayout>

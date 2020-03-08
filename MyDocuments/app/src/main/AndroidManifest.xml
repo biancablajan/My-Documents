@@ -31,7 +31,7 @@
         android:supportsRtl="true"
         android:theme="@style/custom"
         tools:ignore="HardcodedDebugMode">
-        <activity
+        <!--<activity
             android:name="me.licenta.mydocuments.LoginActivity"
             android:theme="@style/custom" >
             <intent-filter>
@@ -40,11 +40,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="me.licenta.mydocuments.RegisterActivity" />
-        <activity android:name="me.licenta.mydocuments.MainActivity" />
+        <activity android:name="me.licenta.mydocuments.RegisterActivity" />-->
+        <activity
+            android:name="me.licenta.mydocuments.MainActivity"
+            android:theme="@style/custom" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+            </activity>
         <activity android:name="me.licenta.mydocuments.MyBillsActivity" />
         <activity android:name=".MyBills_OCRMyBills"/>
-        <activity android:name=".MyBills_ScanWholeBill"/>
+<!--        <activity android:name=".MyBills_ScanWholeBill"/>-->
         <activity android:name=".MyBills_ViewMyBills"/>
         <activity android:name=".MyBills_ShowMeMyLastBills"/>
         <activity android:name=".MyBills_OCRMyBillInstructions"/>
